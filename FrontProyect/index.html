@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title>Petroleos</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"> </script> 
+	
+ 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
+ 	<script src="https://code.angularjs.org/1.2.7/angular-resource.min.js"></script>
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+</head>
+<body >
+
+	<nav>
+		<div class="nav-wrapper blue">
+
+		<a href="#" class="brand-logo">Petroleos ss</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a href="#/suministro"><i class="material-icons left">assignment</i>Suministro</a></li>
+	        <li><a href="#/formVenta"><i class="material-icons left">local_atm</i> Realizar Venta</a></li>
+	        <li><a href="#/ventas"><i class="material-icons left">local_atm</i> Listar Ventas</a></li>
+	        <li><a href="#"><i class="material-icons left">assessment</i>Reportes</a></li>
+	      </ul> 
+				
+		</div>
+	</nav>
+
+
+<div ng-view>	
+
+</div>
+
+
+<footer class="page-footer blue">
+    <div class="container">
+      <div class="row center-align">
+        <div class="col 10 s12">
+          <h5 class="white-text">PETROLEOS S.S</h5>
+          <p class="grey-text text-lighten-4">Creado por Yohan Lenin MESa Y Cristian Candelo</p>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+	
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+	<section class="container">
+		<div class="row">
+			<article>
+				<form  ng-submit="savePost()" method="POST" class="col s12">
+					<h3 class="center-align">{{title}}</h3>
+
+					<div class="input-field col s6">
+						<i class="material-icons prefix">perm_identity</i>
+						<label for="idProveedor">Proveedor</label>
+						<input type="number" ng-model="post.idProveedor" name="idProveedor" id="idProveedor" required>
+					</div>
+
+					<div class="input-field col s6">
+						<i class="material-icons prefix">person_pin</i>
+						<label for="codigo">codigo del Producto</label>
+						<input type="number" ng-model="post.codigoProducto" name="codigo"  required>
+					</div>
+					
+					<div class="input-field col s6">
+						<i class="material-icons prefix">mood</i>
+						<label for="nombre">nombre producto</label>
+						<input type="text" ng-model="post.nombreProducto" name="nombre"  required>
+					</div>
+
+					<div class="input-field col s6">
+						<i class="material-icons prefix">assignment</i>
+						<label for="presentacion">Presentacion </label>
+						<input type="text" ng-model="post.presentacionProducto" name="presentacion" id="presentacion" required>
+					</div>
+
+					<div class="input-field col s6">
+						<i class="material-icons prefix">assignment</i>
+						<label for="cursos">Cantidad</label>
+						<input type="text" ng-model="post.cantidadProducto" name="cursos" id="cursos" required>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">assignment</i>
+						<label for="cursos">Precio para la venta</label>
+						<input type="number" ng-model="post.precioVenta" name="cursos" id="cursos" required>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">assignment</i>
+						<label for="cursos">Precio para la compra</label>
+						<input type="text" ng-model="post.precioCompra" name="cursos" id="cursos" required>
+					</div>
+					<div class="container">
+					<p class="center-align">
+						<button class="waves-effect waves-light btn" type="submit" ><i class="material-icons right">send</i>Registrar Producto</button>
+					</p>
+					</div>
+
+				</form>
+
+			</article>
+		</div>
+		
+	</section>
